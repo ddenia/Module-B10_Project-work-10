@@ -1,0 +1,4 @@
+---
+
+- include_tasks: install_pg.yml
+- include_tasks: configure_pg.yml

@@ -1,0 +1,16 @@
+[app]
+192.168.10.14
+
+[database]
+192.168.10.32
+
+[srv:children]
+app
+database
+
+[srv:vars]
+ansible_python_interpreter=/usr/bin/python3
+
+[database:vars]
+postgresql_version=14
+postgresql_data=/mnt/lib/postgresql
